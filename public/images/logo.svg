@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180" width="360" height="180">
+    <defs>
+        <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4A90E2"/>
+            <stop offset="100%" style="stop-color:#2B6CB0"/>
+        </linearGradient>
+        <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#FFA726"/>
+            <stop offset="100%" style="stop-color:#FB8C00"/>
+        </linearGradient>
+    </defs>
+
+    <!-- 主体图形 -->
+    <g transform="translate(20,20)">
+        <!-- 月牙造型 -->
+        <path d="M40 80 
+                 A40 40 0 1 1 40 0
+                 A40 40 0 0 0 40 80z" 
+              fill="url(#moonGradient)"/>
+        
+        <!-- 装饰性曲线 -->
+        <path d="M80 40 Q120 10 160 40 T240 60" 
+              stroke="url(#accentGradient)" 
+              stroke-width="4" 
+              fill="none"/>
+    </g>
+
+    <!-- 文字部分 -->
+    <g font-family="'Microsoft YaHei', sans-serif" text-anchor="start">
+        <text x="100" y="120" font-size="24" fill="#2B6CB0" font-weight="600">
+            蓝月软装
+            <tspan fill="url(#accentGradient)" font-size="20"> & </tspan>
+            欣意装饰
+        </text>
+        <text x="100" y="150" font-size="14" fill="#718096">
+            BLUE MOON & XINYI DECORATION
+        </text>
+    </g>
+</svg>
